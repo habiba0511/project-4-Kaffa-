@@ -1,0 +1,318 @@
+@media (max-width: 1300px) {
+
+    header nav .navbar-brand {
+        width: 22%;
+    }
+
+    header nav .navbar-toggler {
+        width: 50px;
+        height: 40px;
+        border: 1px solid var(--bodycolor);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        transition-duration: .5s;
+        transition-property: all;
+    }
+
+    header nav .navbar-toggler .navbtn {
+        width: 90%;
+        height: 1.8px;
+        background-color: var(--bodycolor);
+    }
+
+    header nav .navbar-toggler:focus {
+        background-color: white;
+        box-shadow: none;
+    }
+
+    header nav .navbar-collapse {
+        text-align: center;
+        background-color: black;
+        border-radius: 5px;
+    }
+
+    header nav .nav-item:nth-of-type(1) {
+        padding-top: 10px;
+    }
+
+    header nav .nav-item:nth-of-type(6) {
+        padding-bottom: 10px;
+    }
+
+    header nav .nav-item {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 2px;
+    }
+
+    header nav .nav-item .nav-link {
+        margin: auto;
+    }
+
+    header nav .navbar-collapse .nav-item a {
+        margin: 0px !important;
+    }
+
+    header .carousel-inner .carousel-item .carousel-caption h2 {
+        font-size: 30px;
+    }
+
+    header .carousel-inner .carousel-item:nth-of-type(4) .carousel-caption h2 {
+        font-size: 28px;
+    }
+
+    header .carousel-inner .carousel-item .carousel-caption p {
+        font-size: 16px !important;
+        padding: 20px 0px;
+        width: 90%;
+    }
+
+    header .carousel-inner .carousel-item .carousel-caption .buttons a {
+        font-size: 14px;
+    }
+
+    #Services .container i {
+        padding-right: 10px;
+        font-size: calc(2.175rem + 1.5vw) !important;
+    }
+
+    .title h2 {
+        font-size: 40px;
+    }
+
+    #Menu .cover {
+        overflow-x: auto;
+    }
+
+    #Menu .nav-pills {
+        width: max-content;
+    }
+
+    #Menu .cover::-webkit-scrollbar {
+        display: none;
+    }
+
+    #Menu .box {
+        margin: auto;
+    }
+
+    #Beans .container h2 {
+        font-size: 25px;
+    }
+
+    #Beans .container h4 {
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+
+    #Beans .container i {
+        font-size: 50px;
+    }
+
+    #Book .container form {
+        margin: auto;
+    }
+
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+
+    #Services .container .row img {
+        width: 70%;
+    }
+
+    #Services .container .row .item {
+        text-align: center;
+    }
+
+    #Beans .container h2 {
+        font-size: 30px;
+    }
+
+    #Beans .container h4 {
+        font-size: 35px;
+    }
+
+    #Beans .container i {
+        font-size: 70px;
+    }
+
+    #Book .item2 form {
+        width: 90%;
+        margin: auto;
+    }
+
+    #Book .item2 form input,
+    #Book .item2 form textarea,
+    #Book .item2 form button {
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    header .carousel-inner .carousel-item .carousel-caption h2 {
+        font-size: 40px;
+    }
+
+    header .carousel-inner .carousel-item:nth-of-type(4) .carousel-caption h2 {
+        font-size: 40px;
+    }
+
+    header .carousel-inner .carousel-item .carousel-caption p {
+        font-size: 17px !important;
+    }
+
+    header .carousel-inner .carousel-item .carousel-caption .buttons a {
+        font-size: 17px;
+    }
+
+    header nav .navbar-brand {
+        width: 17%;
+    }
+
+    #Menu .box {
+        margin: initial;
+        width: 50%;
+    }
+
+    #Beans .container h2 {
+        font-size: 40px;
+    }
+
+    #Beans .container h4 {
+        font-size: 35px;
+    }
+
+    #Beans .container i {
+        font-size: 60px;
+    }
+
+    #Book .part2 {
+        padding: 0;
+    }
+
+    #Book .item2 form {
+        width: 100%;
+    }
+
+    #Book .item2 form input,
+    #Book .item2 form textarea,
+    #Book .item2 form button {
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+
+    header nav .navbar-brand {
+        width: 13%;
+    }
+
+    header .carousel-inner .carousel-item .carousel-caption h2 {
+        font-size: 47px;
+    }
+
+    header .carousel-inner .carousel-item:nth-of-type(4) .carousel-caption h2 {
+        font-size: 50px;
+    }
+
+    header .carousel-inner .carousel-item .carousel-caption .buttons a {
+        font-size: 20px;
+    }
+
+    #Beans .container h2 {
+        font-size: 50px;
+    }
+
+    #Beans .container h4 {
+        font-size: 45px;
+    }
+
+    #Beans .container i {
+        font-size: 70px;
+    }
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+
+    header nav .navbar-brand {
+        width: 9%;
+    }
+
+    header nav .nav-item {
+        width: initial;
+    }
+
+    header .carousel-inner .carousel-item .carousel-caption h2 {
+        font-size: 55px;
+    }
+
+    header .carousel-inner .carousel-item .carousel-caption .buttons a {
+        font-size: 20px;
+    }
+
+    header nav .navbar-collapse {
+        background-color: transparent;
+    }
+
+    #About .container .part .box .special-card {
+        width: 100%;
+    }
+
+    #Services .container i {
+        font-size: calc(1.5rem + 1.5vw) !important;
+    }
+
+    #Services .container .row img {
+        width: 100%
+    }
+
+    #Menu .box {
+        margin: initial;
+        width: fit-content;
+    }
+
+    #Beans .container h4 {
+        font-size: 50px;
+        padding-bottom: 17px;
+    }
+
+    #Beans .container i {
+        font-size: 75px;
+    }
+
+    #Book .part2 .item2 {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {
+    #Menu .box {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+    header .carousel-inner .carousel-item .carousel-caption p {
+        padding: 12px 0px 5px !important;
+        font-size: 10px;
+    }
+
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+    #Menu .box {
+        width: calc(100%/4);
+    }
+
+    #Book .part2 .item2 {
+        margin-bottom: 30px;
+    }
+
+}

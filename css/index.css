@@ -1,0 +1,636 @@
+header {
+    position: relative;
+}
+
+header nav {
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+}
+
+header nav .nav-item {
+    letter-spacing: 2px;
+}
+
+header nav .nav-item a {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+header nav .nav-item .text {
+    position: relative;
+    z-index: 6;
+}
+
+header nav .nav-item a::after,
+header nav .nav-item a .shape,
+header nav .nav-item a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: calc(100%/3);
+    position: absolute;
+    background-color: var(--bodycolor);
+    transition-duration: .5s;
+}
+
+header nav .nav-item a::before {
+    top: 0;
+    left: -100%;
+}
+
+header nav .nav-item a .shape {
+    top: calc(100%/3);
+    right: -100%;
+}
+
+header nav .nav-item a::after {
+    bottom: 0;
+    left: -100%;
+}
+
+header nav .nav-item a:hover .shape {
+    right: 0;
+}
+
+header nav .nav-item a:hover::before,
+header nav .nav-item a:hover::after {
+    left: 0;
+}
+
+header #carouselExampleDark .carousel-indicators button {
+    background-color: var(--bodycolor);
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+header .carousel-inner .carousel-item {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header .carousel-inner .carousel-item:nth-of-type(1) {
+    background-image: url(../img/banner1-a2f56ce7.jpg);
+}
+
+header .carousel-inner .carousel-item:nth-of-type(2) {
+    background-image: url(../img/banner2-d06af301.jpg);
+}
+
+header .carousel-inner .carousel-item:nth-of-type(3) {
+    background-image: url(../img/banner3-9419d6ac.jpg);
+}
+
+header .carousel-inner .carousel-item:nth-of-type(4) {
+    background-image: url(../img/banner4-dc772093.jpg);
+}
+
+header .carousel-inner .carousel-item::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header .carousel-inner .carousel-item .carousel-caption {
+    position: initial;
+    text-align: left;
+    color: var(--bodycolor);
+}
+
+header .carousel-inner .carousel-item .container {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+}
+
+header .carousel-inner .carousel-item .carousel-caption>* {
+    transition-duration: 1s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+header .carousel-inner .carousel-item .carousel-caption p {
+    transition-delay: .2s;
+    width: 80%;
+}
+
+header .carousel-inner .carousel-item .carousel-caption .buttons {
+    transition-delay: .4s;
+}
+
+header .carousel-inner .carousel-item.active .carousel-caption>* {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+header .carousel-inner .carousel-item .carousel-caption p {
+    letter-spacing: 1.5px;
+}
+
+header .carousel-inner .carousel-item .carousel-caption h2 {
+    letter-spacing: 1.5px;
+}
+
+header .carousel-inner .carousel-item .carousel-caption .buttons a {
+    border: 1px solid var(--bodycolor);
+    color: var(--bodycolor);
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+header .carousel-inner .carousel-item .carousel-caption .buttons a span {
+    position: relative;
+    z-index: 10;
+    transition-duration: 1s;
+}
+
+header .carousel-inner .carousel-item .carousel-caption .buttons a:hover span {
+    color: #fff !important;
+}
+
+header .carousel-inner .carousel-item .carousel-caption .buttons a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 22px solid var(--bodycolor);
+    border-right-color: transparent;
+    top: 0;
+    right: 100%;
+    transition-duration: 1s;
+}
+
+header .carousel-inner .carousel-item .carousel-caption .buttons a:hover:before {
+    right: 0;
+}
+
+header .carousel-inner .carousel-item .carousel-caption .buttons a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 22px solid var(--bodycolor);
+    border-left-color: transparent;
+    top: 0;
+    left: 100%;
+    transition-duration: 1s;
+}
+
+header .carousel-inner .carousel-item .carousel-caption .buttons a:hover::after {
+    left: 0;
+}
+
+#About .container .part span {
+    font-size: 13px;
+}
+
+#About .container .part.col-lg-4 {
+    letter-spacing: 1.5px;
+}
+
+#About .container .part.col-lg-4 h2 {
+    font-size: 43px;
+}
+
+#About .container .part.col-lg-4 p {
+    letter-spacing: 1px;
+}
+
+#About .container .part.col-lg-4 button {
+    position: relative;
+    overflow: hidden;
+}
+
+#About .container .part.col-lg-4 button span {
+    font-size: 20px;
+    letter-spacing: .5px;
+    transition-duration: .7s;
+    position: relative;
+    z-index: 10;
+}
+
+#About .container .part.col-lg-4 button:hover span {
+    color: var(--bodycolor);
+}
+
+#About .container .part.col-lg-4 button::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    transition-duration: .7s;
+}
+
+#About .container .part.col-lg-4 button:hover::before {
+    top: 0;
+}
+
+#About .container .part.col-lg-4 button::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    transition-duration: .7s;
+}
+
+#About .container .part.col-lg-4 button:hover::after {
+    bottom: 0;
+}
+
+#About .container .special-card {
+    width: 230px;
+    height: 400px;
+    --firstcolor: #404042;
+    --second-color: #87744a;
+    --third-color: #6d1f37;
+    position: relative;
+}
+
+#About .container .special-card .front {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    transition-duration: 2s;
+}
+
+#About .container .box:nth-of-type(1) .special-card .front {
+    background-image: url(../img/about_front_01-306d5b8a.jpg);
+}
+
+
+#About .container .box:nth-of-type(2) .special-card .front {
+    background-image: url(../img/coffee_1-c62ba359.jpg);
+}
+
+
+#About .container .box:nth-of-type(3) .special-card .front {
+    background-image: url(../img/coffee_2-5baa1bab.jpg);
+}
+
+#About .container .special-card .back {
+    color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform: rotateY(-180deg);
+    transition-duration: 2s;
+    backface-visibility: hidden;
+}
+
+#About .container .box:nth-of-type(1) .special-card .back {
+    background-color: var(--firstcolor);
+}
+
+#About .container .box:nth-of-type(2) .special-card .back {
+    background-color: var(--second-color);
+}
+
+#About .container .box:nth-of-type(3) .special-card .back {
+    background-color: var(--third-color);
+}
+
+#About .container .special-card:hover .back {
+    transform: rotateY(0deg);
+}
+
+#About .container .special-card:hover .front {
+    transform: rotateY(180deg);
+}
+
+#About .container .special-card p {
+    padding: 0px 8px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+#About .container .part .box .special-card button {
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    transition-duration: 1s;
+}
+
+#About .container .part .box .special-card button i {
+    transition-duration: 1s;
+}
+
+#About .container .part .box .special-card button:hover {
+    background-color: white !important;
+}
+
+#About .container .part .box .special-card button:hover i {
+    margin-left: 10px;
+}
+
+#About .container .box:nth-of-type(1) .special-card button:hover i,
+#About .container .box:nth-of-type(1) .special-card button:hover {
+    color: var(--firstcolor) !important;
+}
+
+#About .container .box:nth-of-type(2) .special-card button:hover i,
+#About .container .box:nth-of-type(2) .special-card button:hover {
+    color: var(--second-color) !important;
+}
+
+#About .container .box:nth-of-type(3) .special-card button:hover i,
+#About .container .box:nth-of-type(3) .special-card button:hover {
+    color: var(--third-color) !important;
+}
+
+#Services {
+    background-image: url(../img/beans_bg-aaa84446.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#Services::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#Services .container {
+    position: relative;
+}
+
+#Services .container i {
+    color: var(--bodycolor);
+}
+
+#Services .container p {
+    color: #c2c2c2;
+    font-weight: 100;
+}
+
+#Services .container .row img {
+    animation-name: animate1;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
+
+#Menu .nav-pills {
+    width: fit-content;
+}
+
+#Menu .nav-pills .nav-link {
+    color: #fff;
+}
+
+#Menu .nav-pills .nav-link {
+    transition-duration: .5s;
+}
+
+#Menu .nav-pills .nav-link.active,
+#Menu .nav-pills .nav-link:hover {
+    background-color: #fff;
+    color: var(--bodycolor);
+}
+
+#Menu .box {
+    width: fit-content;
+    transform: scale(0);
+    transition-duration: 1s;
+}
+
+#Menu .tab-pane.show .box {
+    transform: scale(1);
+}
+
+#Menu .item {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#Menu .item h5,
+#Menu .item p {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    background-image: url(../img/leaves_pattern-469e0d34.png);
+    background-color: var(--bodycolor);
+    padding: 6px;
+    border-radius: 0px 10px 10px 0px;
+    transform: translateX(-100%);
+    transition-duration: 1s;
+}
+
+#Menu .item h5 {
+    top: 20px;
+    font-size: 15px;
+}
+
+#Menu .item p {
+    bottom: 20px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+#Menu .item:hover h5,
+#Menu .item:hover p {
+    transform: translateX(0%);
+}
+
+#Menu .item img {
+    transition-duration: 1s;
+    transform: scale(.8);
+}
+
+#Menu .item:hover img {
+    transform: scale(1);
+}
+
+#Beans {
+    background-image: url(../img/ice_drinks_bg-a22d2b06.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#Beans::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #362d2799;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#Beans .container {
+    position: relative;
+}
+
+#Beans .container h2 {
+    color: var(--bodycolor) !important;
+    font-size: 79px;
+    text-shadow: 1.5px 1.5px 1px #362d27;
+}
+
+#Beans .container h4 {
+    font-size: 58px;
+    padding-bottom: 17px;
+}
+
+#Beans .container i {
+    transition-duration: 1s;
+    cursor: pointer;
+    font-size: 90px;
+}
+
+#Beans .container i:hover {
+    color: var(--bodycolor);
+}
+
+#exampleModal .modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#exampleModal .modal-dialog video {
+    width: 100%;
+}
+
+#Book {
+    background-image: url(../img/black-bg-a502b375\ \(1\).png);
+}
+
+#Book .part1 {
+    display: flex;
+    align-items: end;
+}
+
+#Book .item2 form {
+    background-image: url(../img/leaves_pattern-469e0d34.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--bodycolor);
+    height: 620px;
+    width: 98%;
+}
+
+#Book .item2 form h4 {
+    font-size: 27px;
+}
+
+#Book .item2 form input,
+#Book .item2 form textarea {
+    width: 72%;
+    height: 6.5%;
+    border-radius: 7px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: none;
+    font-weight: 100;
+}
+
+#Book .item2 form input:focus,
+#Book .item2 form textarea:focus {
+    border: none;
+    outline: none;
+}
+
+#Book .item2 form textarea {
+    resize: none;
+    height: 39%;
+}
+
+#Book .item2 form button {
+    width: 72%;
+    height: 6.5%;
+    padding: 5px;
+    font-size: 17px;
+    letter-spacing: .5px;
+    border: 1px solid var(--bodycolor);
+    position: relative;
+    overflow: hidden;
+    transition-duration: 1s;
+}
+
+#Book .item2 form button:hover {
+    border: 1px solid white;
+}
+
+#Book .item2 form button span {
+    position: relative;
+}
+
+#Book .item2 form button::before {
+    content: "";
+    display: block;
+    background-color: var(--bodycolor);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    transition-duration: 1s;
+}
+
+#Book .item2 form button:hover::before {
+    bottom: 0px;
+}
+
+footer {
+    background-color: #333;
+}
+
+footer p {
+    font-size: 17px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    margin: 0;
+}
+
+footer p span {
+    font-weight: 350;
+}
